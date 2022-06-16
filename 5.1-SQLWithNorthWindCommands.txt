@@ -3,4 +3,22 @@
 3.) SELECT * FROM Customers WHERE id LIKE '1';
 4.) SELECT * FROM orders LIMIT 100;
 5.) SELECT * FROM customers WHERE zip_postal_code = '1010' OR zip_postal_code = '3012' OR zip_postal_code = '12209' OR zip_postal_code = '05023' OR zip_postal_code = '99999';
-6.) 
+6.) SELECT * FROM orders WHERE ship_country_region != 'null';
+7.) SELECT * FROM customers order by country_region, city;
+8.) INSERT INTO Customers (id, company, last_name, first_name, email_address, job_title, business_phone, home_phone, mobile_phone, fax_number, address, city, state_province, zip_postal_code, country_region, web_page, notes, attachments) VALUES ('57', 'EFTEC', 'BRUSH', 'DAVID', 'brush@nonaya.com', 'Chemist', '(000)867-5309', 'null', 'null', '(000)867-5309', '123 EFWAY', 'Taylor', 'MI', '48183', 'USA', 'null', 'null', 'null');
+9.) UPDATE orders SET ship_country_region = 'EuroZone' WHERE ship_country_region = 'USA';
+10.) DELETE FROM orders WHERE shipper_id = '1';
+11.) SELECT AVG(quantity), MIN(quantity), MAX(quantity) FROM order_details;
+12.) SELECT * FROM order_details order by order_id;
+SELECT AVG(quantity), MIN(quantity), MAX(quantity) from order_details GROUP BY order_id;
+13.) SELECT customer_id FROM orders WHERE employee_id = '9';
+14.) SELECT * FROM orders INNER JOIN customers;
+     SELECT * FROM orders LEFT JOIN customers;
+     SELECT * FROM orders RIGHT JOIN customers;
+15.) SELECT * FROM orders INNER JOIN customers; 
+     SELECT ship_city, ship_country_region FROM orders WHERE shipper_id = '2';      
+16.) SELECT * FROM orders INNER JOIN customers, order_details;
+     SELECT ship_name FROM orders WHERE product_id = '80';
+17.) SELECT * from customers WHERE job_title = 'Owner';
+18.) SELECT * from customers WHERE job_title != 'Owner';
+
