@@ -1,0 +1,6 @@
+1.) SELECT * FROM customers;
+2.) SELECT DISTINCT country_region FROM Customers;
+3.) SELECT * FROM Customers WHERE id LIKE '1';
+4.) SELECT * FROM orders LIMIT 100;
+5.) SELECT * FROM customers WHERE zip_postal_code = '1010' OR zip_postal_code = '3012' OR zip_postal_code = '12209' OR zip_postal_code = '05023' OR zip_postal_code = '99999';
+6.) 
